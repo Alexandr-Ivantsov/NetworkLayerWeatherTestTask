@@ -1,13 +1,13 @@
 import ProjectDescription
 
 let project = Project(
-    name: "WeatherTestTask",
+    name: "NetworkLayerWeatherTestTask",
     targets: [
         .target(
-            name: "WeatherTestTask",
+            name: "NetworkLayerWeatherTestTask",
             destinations: .iOS,
             product: .framework,
-            bundleId: "io.tuist.WeatherTestTask",
+            bundleId: "io.tuist.NetworkLayerWeatherTestTask",
             deploymentTargets: .iOS("15.0"),
             infoPlist: .default,
             sources: ["Sources/**"],
@@ -28,12 +28,12 @@ let project = Project(
             name: "WeatherTestTaskTests",
             destinations: .iOS,
             product: .unitTests,
-            bundleId: "io.tuist.WeatherTestTaskTests",
+            bundleId: "io.tuist.NetworkLayerWeatherTestTaskTests",
             deploymentTargets: .iOS("15.0"),
             infoPlist: .default,
             sources: ["Tests/**"],
             resources: [],
-            dependencies: [.target(name: "WeatherTestTask")]
+            dependencies: [.target(name: "NetworkLayerWeatherTestTask")]
         )
     ]
 )

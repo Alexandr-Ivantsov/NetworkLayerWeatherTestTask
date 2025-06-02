@@ -1,6 +1,6 @@
 import XCTest
 
-final class WeatherTestTaskTests: XCTestCase {
+final class NetworkLayerWeatherTestTaskTests: XCTestCase {
     func testTwoPlusTwo() {
         XCTAssertEqual(2 + 2, 4)
     }

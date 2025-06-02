@@ -18,9 +18,9 @@ let packageSettings = PackageSettings(
 #endif
 
 let package = Package(
-    name: "WeatherTestTask",
+    name: "NetworkLayerWeatherTestTask",
     products: [
-        .library(name: "WeatherTestTask", targets: ["WeatherTestTask"])
+        .library(name: "NetworkLayerWeatherTestTask", targets: ["NetworkLayerWeatherTestTask"])
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.8.0")),
@@ -33,7 +33,7 @@ let package = Package(
 //        .package(openurl: "https://github.com/layoutBox/PinLayout.git", .upToNextMajor(from: "1.10.5"))
     ],
     targets: [
-        .target(name: "WeatherTestTask",
+        .target(name: "NetworkLayerWeatherTestTask",
                 dependencies: [
                     "RxSwift",
                     .product(name: "RxCocoa", package: "RxSwift"),
