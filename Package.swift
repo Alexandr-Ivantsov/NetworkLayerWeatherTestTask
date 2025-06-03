@@ -34,7 +34,8 @@ let package = Package(
                     .product(name: "RxCocoa", package: "RxSwift"),
                     .product(name: "RxRelay", package: "RxSwift"),
                     "Moya",
-                    .product(name: "RxMoya", package: "Moya")
+                    .product(name: "RxMoya", package: "Moya"),
+                    "Alert"
                 ])
     ]
 )
