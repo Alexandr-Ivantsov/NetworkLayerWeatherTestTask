@@ -11,8 +11,6 @@ let packageSettings = PackageSettings(
         "Stevia": .framework,
         "Factory": .framework,
         "Alert": .framework
-//        "CacheManagerWithoutKeychain": .framework
-//        "PinLayout": .framework
     ]
 )
 #endif
@@ -28,9 +26,6 @@ let package = Package(
         .package(url: "https://github.com/freshOS/Stevia.git", .upToNextMajor(from: "6.0.0")),
         .package(url: "https://github.com/hmlongco/Factory.git", .upToNextMajor(from: "2.5.2")),
         .package(url: "https://github.com/Alexandr-Ivantsov/Alert.git", branch: "main")
-//        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git" , .upToNextMajor(from: "1.8.4")),
-//        .package(url: "https://github.com/Alexandr-Ivantsov/CacheManagerWithoutKeychain.git", branch: "main")
-//        .package(openurl: "https://github.com/layoutBox/PinLayout.git", .upToNextMajor(from: "1.10.5"))
     ],
     targets: [
         .target(name: "NetworkLayerWeatherTestTask",

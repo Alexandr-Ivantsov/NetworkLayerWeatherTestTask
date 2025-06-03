@@ -21,11 +21,10 @@ let project = Project(
                 .external(name: "Stevia"),
                 .external(name: "Factory"),
                 .external(name: "Alert")
-//                .external(name: "CacheManagerWithoutKeychain")
             ]
         ),
         .target(
-            name: "WeatherTestTaskTests",
+            name: "NetworkLayerWeatherTestTaskTests",
             destinations: .iOS,
             product: .unitTests,
             bundleId: "io.tuist.NetworkLayerWeatherTestTaskTests",
