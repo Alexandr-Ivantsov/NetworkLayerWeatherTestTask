@@ -20,7 +20,8 @@ let project = Project(
                 .external(name: "RxMoya"),
                 .external(name: "Stevia"),
                 .external(name: "Factory"),
-                .external(name: "Alert")
+                .external(name: "Alert"),
+                .external(name: "Router")
             ]
         ),
         .target(
